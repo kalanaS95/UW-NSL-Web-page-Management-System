@@ -49,9 +49,9 @@ public class MainWindow extends javax.swing.JFrame {
     private StringBuilder imgPath2 = new StringBuilder();
     
     private String serverOtherImgDirectory = "/var/www/html/research/nsl/faculty/radha/assets/images/";
-    private String baseOtherPicsURL ="https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/images/";
+    private String baseOtherPicsURL ="https://labs.ece.uw.edu/nsl/faculty/radha/assets/images/";
     private String serverProfilePicDirectory = "/var/www/html/research/nsl/faculty/radha/profile_pics/";
-    private String baseprofilePicURL = "https://www2.ee.washington.edu/research/nsl/faculty/radha/profile_pics/";
+    private String baseprofilePicURL = "https://labs.ece.uw.edu/nsl/faculty/radha/profile_pics/";
     
 
     private List<String> listOfColumns = new ArrayList<String>();
@@ -218,7 +218,6 @@ public class MainWindow extends javax.swing.JFrame {
         newsTitle = new javax.swing.JTextArea();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        Newsdate = new org.jdesktop.swingx.JXDatePicker();
         jLabel34 = new javax.swing.JLabel();
         jScrollPane36 = new javax.swing.JScrollPane();
         newsDescription = new javax.swing.JTextArea();
@@ -227,6 +226,7 @@ public class MainWindow extends javax.swing.JFrame {
         newsLinkTable = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        Newsdate = new org.jdesktop.swingx.JXDatePicker();
         jPanel9 = new javax.swing.JPanel();
         newsUseURL1 = new javax.swing.JRadioButton();
         newsUploadimg1 = new javax.swing.JRadioButton();
@@ -1272,20 +1272,24 @@ public class MainWindow extends javax.swing.JFrame {
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel34)
+                        .addGap(169, 169, 169))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel32)
-                            .addComponent(jScrollPane35, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel33)
-                            .addComponent(Newsdate, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel34)
-                    .addComponent(jScrollPane36))
-                .addGap(18, 18, 18)
+                            .addComponent(jScrollPane36)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel32)
+                                    .addComponent(jScrollPane35, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel33)
+                                    .addComponent(Newsdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(18, 18, 18)))
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane34, javax.swing.GroupLayout.DEFAULT_SIZE, 563, Short.MAX_VALUE)
+                    .addComponent(jScrollPane34, javax.swing.GroupLayout.DEFAULT_SIZE, 635, Short.MAX_VALUE)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel35)
@@ -1307,18 +1311,18 @@ public class MainWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane35, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                            .addComponent(Newsdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jScrollPane35, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel34)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane36))
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jScrollPane34, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane34, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Newsdate, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
                             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
@@ -1997,7 +2001,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void commitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_commitActionPerformed
         try
         {
-            URL base_ = new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/"+currentTab.toLowerCase()+".html");
+            URL base_ = new URL("https://labs.ece.uw.edu/nsl/faculty/radha/"+currentTab.toLowerCase()+".html");
             scpCPY.openWebpage(base_);
         }
         catch(Exception x)
@@ -2236,7 +2240,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel48MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/links").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/links").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2246,7 +2250,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel49MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/research").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/research").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2256,7 +2260,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/publications").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/publications").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2266,7 +2270,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel51MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/facultyMembers").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/facultyMembers").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2276,7 +2280,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel52MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/tools").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/tools").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2286,7 +2290,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel53MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/currentMembers").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/currentMembers").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2296,7 +2300,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel54MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/visiting_profs").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/visiting_profs").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2306,7 +2310,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel55MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/visiting_studs").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/visiting_studs").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2316,7 +2320,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/alums").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/alums").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2326,7 +2330,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel57MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/courses").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/courses").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();
@@ -2336,7 +2340,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jLabel58MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel58MouseClicked
         try
         {
-            java.awt.Desktop.getDesktop().browse(new URL("https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/news").toURI());
+            java.awt.Desktop.getDesktop().browse(new URL("https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/news").toURI());
         }catch (Exception x)
         {
             x.printStackTrace();

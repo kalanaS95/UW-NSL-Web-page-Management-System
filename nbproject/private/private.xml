@@ -3,14 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Kalana/OneDrive/WebpageEditor/src/webpageeditor/fetchFiles.java</file>
-            <file>file:/C:/Users/Kalana/OneDrive/WebpageEditor/src/webpageeditor/WebpageEditor.java</file>
-            <file>file:/C:/Users/Kalana/OneDrive/WebpageEditor/src/webpageeditor/MainWindow.java</file>
-            <file>file:/C:/Users/Kalana/OneDrive/WebpageEditor/src/webpageeditor/SCP.java</file>
-            <file>file:/C:/Users/Kalana/OneDrive/WebpageEditor/src/webpageeditor/fileOperations.java</file>
-            <file>file:/C:/Users/Kalana/OneDrive/WebpageEditor/src/webpageeditor/login.java</file>
-            <file>file:/C:/Users/Kalana/OneDrive/WebpageEditor/src/webpageeditor/JSONparser.java</file>
-            <file>file:/C:/Users/Kalana/OneDrive/WebpageEditor/src/webpageeditor/fillTable.java</file>
+            <file>file:/C:/Users/kalan/OneDrive/WebpageEditor/src/webpageeditor/WebpageEditor.java</file>
+            <file>file:/C:/Users/kalan/OneDrive/WebpageEditor/src/webpageeditor/fetchFiles.java</file>
+            <file>file:/C:/Users/kalan/OneDrive/WebpageEditor/src/webpageeditor/login.java</file>
+            <file>file:/C:/Users/kalan/OneDrive/WebpageEditor/src/webpageeditor/fillTable.java</file>
+            <file>file:/C:/Users/kalan/OneDrive/WebpageEditor/src/webpageeditor/fileOperations.java</file>
+            <file>file:/C:/Users/kalan/OneDrive/WebpageEditor/src/webpageeditor/SCP.java</file>
+            <file>file:/C:/Users/kalan/OneDrive/WebpageEditor/src/webpageeditor/JSONparser.java</file>
         </group>
     </open-files>
 </project-private>

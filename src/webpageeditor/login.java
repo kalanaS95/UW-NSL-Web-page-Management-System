@@ -27,7 +27,7 @@ public class login extends javax.swing.JFrame {
      * Creates new form logign
      */
     
-    private static String URL = "https://www2.ee.washington.edu/research/nsl/faculty/radha/assets/json/";
+    private static String URL = "https://labs.ece.uw.edu/nsl/faculty/radha/assets/json/";
     private static String[] fileNames = new String[]{"alums","courses","currentMembers","facultyMembers","links","news","publications","research","tools","visiting_profs","visiting_studs"};
     private static List<String> downloadFiles = new ArrayList<String>();
     private SCP myscp = new SCP();

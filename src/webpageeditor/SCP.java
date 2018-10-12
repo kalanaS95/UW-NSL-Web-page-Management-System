@@ -23,7 +23,7 @@ public class SCP {
 
     private String UserName="";
     private String Password="";
-    private String host = "www2.ee.washington.edu";
+    private String host = "labs.ece.uw.edu";
     private String destination = "/var/www/html/research/nsl/faculty/radha/assets/json/";
     private boolean loginPassed = false;
     private JSch jsch=new JSch();
