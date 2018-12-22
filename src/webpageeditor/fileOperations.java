@@ -5,6 +5,7 @@
  */
 package webpageeditor;
 
+import com.sun.javafx.PlatformUtil;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -161,7 +162,7 @@ public class fileOperations {
     {
         try
         {
-            File myFile = new File(System.getProperty("user.dir")+"\\JSON\\"+fileLocation);
+            File myFile = new File(System.getProperty("user.dir")+OSPathHandler()+fileLocation);
             FileWriter  mywriter = new FileWriter(myFile,false); //overwrite the file
             BufferedWriter buffer = new BufferedWriter(mywriter);
             buffer.write(JSONstring);
@@ -203,6 +204,13 @@ public class fileOperations {
     
     
     
-    
+  private String OSPathHandler()
+  {
+      String path;
+      if(PlatformUtil.isMac() || PlatformUtil.isLinux() || PlatformUtil.isUnix())
+            return "/JSON/";
+        else
+            return "\\JSON\\";
+  }
 
 }

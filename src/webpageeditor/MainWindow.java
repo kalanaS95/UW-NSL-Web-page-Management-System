@@ -96,7 +96,7 @@ public class MainWindow extends javax.swing.JFrame {
     public void setSCP(SCP scp)
     {
         scpCPY = scp;
-        this.setTitle("NSL Web Page Management System ["+scpCPY.getUserName()+"@www2.ee.washington.edu]");
+        this.setTitle("NSL Web Page Management System ["+scpCPY.getUserName()+"@labs.ece.uw.edu]");
     }
     /**
      * This method is called from within the constructor to initialize the form.

@@ -5,6 +5,7 @@
  */
 package webpageeditor;
 
+import com.sun.javafx.PlatformUtil;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -34,7 +35,7 @@ public class JSONparser {
         JSONArray a = null;
         try {
 
-            a = (JSONArray)parser.parse(new FileReader(System.getProperty("user.dir")+"\\JSON\\"+Link));
+            a = (JSONArray)parser.parse(new FileReader(System.getProperty("user.dir")+OSPathHandler()+Link));
             JSONObject obj = (JSONObject)a.get(0);
             // Loop through each item
                 
@@ -70,5 +71,15 @@ public class JSONparser {
         return ListOmaps;
     }
     
+  
+  
+  private String OSPathHandler()
+  {
+      String path;
+      if(PlatformUtil.isMac() || PlatformUtil.isLinux() || PlatformUtil.isUnix())
+            return "/JSON/";
+        else
+            return "\\JSON\\";
+  }
     
 }

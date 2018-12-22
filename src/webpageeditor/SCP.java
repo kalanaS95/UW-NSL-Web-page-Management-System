@@ -8,6 +8,7 @@ package webpageeditor;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
+import com.sun.javafx.PlatformUtil;
 import java.awt.Desktop;
 import java.io.File;
 import java.net.URI;
@@ -27,7 +28,7 @@ public class SCP {
     private String destination = "/var/www/html/research/nsl/faculty/radha/assets/json/";
     private boolean loginPassed = false;
     private JSch jsch=new JSch();
-         
+    private String dirName;
     public boolean connectTest(String username, String password ) 
     {
         System.out.println("Running SCP");
@@ -62,6 +63,12 @@ public class SCP {
     
     public void uploadFile(String fileName)
     {
+        //determining OS family to perform fetching file s correctly
+        if(PlatformUtil.isMac() || PlatformUtil.isLinux() || PlatformUtil.isUnix())
+            dirName = "/JSON/";
+        else
+            dirName = "\\JSON\\";
+        
         try
         {
             Session session = jsch.getSession(UserName, host);
@@ -69,7 +76,7 @@ public class SCP {
             session.connect();
             ChannelSftp sftpChannel = (ChannelSftp) session.openChannel("sftp");
             sftpChannel.connect();
-            sftpChannel.put(System.getProperty("user.dir")+"\\JSON\\"+fileName, destination+fileName,ChannelSftp.OVERWRITE);
+            sftpChannel.put(System.getProperty("user.dir")+dirName+fileName, destination+fileName,ChannelSftp.OVERWRITE);
             sftpChannel.disconnect();
             session.disconnect();
             

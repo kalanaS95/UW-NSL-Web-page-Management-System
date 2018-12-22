@@ -5,6 +5,7 @@
  */
 package webpageeditor;
 
+import com.sun.javafx.PlatformUtil;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -22,11 +23,20 @@ import javax.swing.JOptionPane;
  */
 public class fetchFiles {
     
+    private String dirName;
     public void downloadFiles(String WebstiteUrl, List<String>files) throws MalformedURLException, IOException
     {
+        //determining OS family to perform fetching file s correctly
+        if(PlatformUtil.isMac() || PlatformUtil.isLinux() || PlatformUtil.isUnix())
+            dirName = "/JSON/";
+        else
+            dirName = "\\JSON\\";
+        
         for(int loop=0;loop<files.size();loop++)
         {
-            Path target = Paths.get(System.getProperty("user.dir")+"\\JSON\\"+files.get(loop));
+            System.err.println( System.getProperty("os.name"));
+            Path target = Paths.get(System.getProperty("user.dir")+dirName+files.get(loop));
+            System.err.println("Path --> "+target.toString());
             URL website = new URL(WebstiteUrl+files.get(loop));
 
             try (InputStream in = website.openStream())
